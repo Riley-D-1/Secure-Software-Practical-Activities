@@ -6,3 +6,6 @@ def check_api_key(key):
 
 # Modify so it accepts any key from: ["key1", "key2", "mysecret"]
 print(check_api_key("wrongkey"))  # False
+
+#Completed
+ 

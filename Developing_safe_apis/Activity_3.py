@@ -10,3 +10,4 @@ def get_username(data):
 # other exceptions should return "Error: Invalid data".
 print(get_username({}))          # What prints?
 print(get_username({'username': 'Sam'}))
+# Completed 

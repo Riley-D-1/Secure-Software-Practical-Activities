@@ -15,3 +15,4 @@ def validate_age(age):
 # - "Valid" if age is OK
 print(validate_age('abc'))   # False
 print(validate_age('25'))    # True
+# Completed
