@@ -47,7 +47,7 @@ function login(username, password) {
         //
         // PROBLEM:
         // Anyone can open Developer Tools and change this value.
-        localStorage.setItem("loggedIn", true);
+        sessionStorage.setItem("loggedIn", true);
 
         alert("Logged in!");
         location.reload(); // reload so Step 3 runs
@@ -59,7 +59,7 @@ function login(username, password) {
 //
 // It checks localStorage to decide if the user is logged in.
 // The browser does not know if this value is trustworthy.
-if (localStorage.getItem("loggedIn")) {
+if (sessionStorage.getItem("loggedIn")) {
 
     // STEP 4:
     // If loggedIn exists, the user is shown protected content.
@@ -90,6 +90,6 @@ WHY THIS HELPS:
 - Random values are harder to guess or fake
 */
 </script>
-
+<!--Incomplete as this is not safer?, would need a proper backend to correctly store safely.-->
 </body>
 </html>
