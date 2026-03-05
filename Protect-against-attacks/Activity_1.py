@@ -29,6 +29,7 @@ decrypt_file('Protect-against-attacks\sensitive_data.txt.enc')
 
 # Descibe the result:
 """
-The program outputted an unreadable string from the encrypted data that needs specialised  tools in order to read the encrypted version.
+The program outputted an unreadable string from the encrypted data that needs specialised tools in order to read the encrypted version.
+It's clearly changed my input which was "egg test" to an unreadble output that requires decryption.
 
 """

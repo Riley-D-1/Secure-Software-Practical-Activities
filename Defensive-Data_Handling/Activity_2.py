@@ -6,10 +6,12 @@ Keep asking the user until valid input is received.
 
 Provide clear feedback explaining why input was invalid"""
 
-age_input = input("Please enter your age: ")
-print(0 <= int(age_input) <= 120)
-if isinstance(age_input,int) and 0 >= int(age_input) <= 120:
-    print(f"Your age is: {age_input}")
-elif isinstance(age_input,int) == False : 
+try:
+    age_input = int(input("Please enter your age: "))
+except:
     print("Your age is not a valid int")
-elif 
+if 0 <= int(age_input) <= 120:
+    print(f"Your age is: {age_input}")
+else:
+    print("Your input is not in the valid range of 0-120 (inclusive)")
+# Activity completed 

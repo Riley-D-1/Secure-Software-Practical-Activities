@@ -15,3 +15,4 @@ if len(comment) > 200:
 else:
     safe_comment = re.sub(r"[&<>]", "", comment)
     print(f"User comment: {safe_comment}")
+# Completed
